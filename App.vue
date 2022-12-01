@@ -14,10 +14,7 @@
 
 <style>
 	
-	*{
-		padding: 0;
-		margin: 0;
-	}
+	
 	/* 引入公共样式 */
 	@import url("@/common/free.css");
 	@import url("@/common/common.css");  /*背景*/
