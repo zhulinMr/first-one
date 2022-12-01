@@ -6,7 +6,66 @@
 				"navigationBarTitleText": "uni-app"
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/learn/learn",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/my",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的",
+				
+				"navigationBarBackgroundColor": "#5ccc84",
+				"navigationBarTextStyle":"white",
+                "enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {
+						// "type": "default",
+						"buttons": [
+							{
+								"float": "right",
+								"type": "menu",
+								"background":"#5ccc84"
+							}
+						]
+					}
+				}
+            }
+            
+        }
+    ],
+	"tabBar": {
+		"selectedColor":"#2a2a2a",  //选中的颜色
+		"height": "105rpx", //tabbar高度
+		"backgroundColor": "#fff",  //背景颜色
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text":"首页",
+				"iconPath": "static/tabbar/index1.png",
+				"selectedIconPath": "static/tabbar/index1_selected.png"
+				
+			},
+			{
+				"pagePath": "pages/learn/learn",
+				"text": "学习",
+				"iconPath": "static/tabbar/learn.png",
+				"selectedIconPath": "static/tabbar/learn_selected.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "static/tabbar/home.png",
+				"selectedIconPath": "static/tabbar/home_selected.png"
+			}
+		]
+	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
